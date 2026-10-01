@@ -1,0 +1,1257 @@
+{
+  "study_period": "2019-01-02 to 2026-06-18",
+  "data_source": "Stock_combined.csv",
+  "total_companies": 50,
+  "companies": [
+    {
+      "ticker": "1101",
+      "full_ticker": "1101.TW",
+      "name": "台泥",
+      "industry": "水泥工業",
+      "market_cap": "1843.18 億",
+      "logo": "https://logo.clearbit.com/taiwancement.com",
+      "return_risk": {
+        "expected_return": 206.04,
+        "volatility": 2011.93
+      },
+      "pca": {
+        "pc1": -6.8432,
+        "pc2": 22.6932
+      },
+      "predictions": {
+        "1D": -0.09,
+        "5D": 0.05,
+        "10D": -0.01,
+        "20D": 0.02,
+        "1Q": 0.04,
+        "0.5Y": 0.09,
+        "1Y": -0.1
+      }
+    },
+    {
+      "ticker": "1102",
+      "full_ticker": "1102.TW",
+      "name": "亞泥",
+      "industry": "水泥工業",
+      "market_cap": "1269.67 億",
+      "logo": "https://logo.clearbit.com/acc.com.tw",
+      "return_risk": {
+        "expected_return": 692.82,
+        "volatility": 1856.85
+      },
+      "pca": {
+        "pc1": -8.4495,
+        "pc2": 26.7221
+      },
+      "predictions": {
+        "1D": 0.01,
+        "5D": 0.03,
+        "10D": -0.05,
+        "20D": 0.07,
+        "1Q": -0.0,
+        "0.5Y": 0.07,
+        "1Y": -0.08
+      }
+    },
+    {
+      "ticker": "1216",
+      "full_ticker": "1216.TW",
+      "name": "統一",
+      "industry": "食品工業",
+      "market_cap": "4233.10 億",
+      "logo": "https://logo.clearbit.com/uni-president.com.tw",
+      "return_risk": {
+        "expected_return": 459.21,
+        "volatility": 1765.86
+      },
+      "pca": {
+        "pc1": -5.0867,
+        "pc2": 28.7235
+      },
+      "predictions": {
+        "1D": -0.0,
+        "5D": -0.04,
+        "10D": 0.16,
+        "20D": 0.0,
+        "1Q": 0.09,
+        "0.5Y": -0.02,
+        "1Y": -0.04
+      }
+    },
+    {
+      "ticker": "1301",
+      "full_ticker": "1301.TW",
+      "name": "股票 1301",
+      "industry": "上市企業",
+      "market_cap": "3291.09 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": -528.7,
+        "volatility": 2787.27
+      },
+      "pca": {
+        "pc1": -5.4674,
+        "pc2": 24.3338
+      },
+      "predictions": {
+        "1D": -0.6,
+        "5D": 0.03,
+        "10D": 0.18,
+        "20D": -0.21,
+        "1Q": -0.01,
+        "0.5Y": 0.19,
+        "1Y": -0.15
+      }
+    },
+    {
+      "ticker": "1303",
+      "full_ticker": "1303.TW",
+      "name": "股票 1303",
+      "industry": "上市企業",
+      "market_cap": "11023.84 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1284.18,
+        "volatility": 3382.43
+      },
+      "pca": {
+        "pc1": 1.2853,
+        "pc2": 16.5522
+      },
+      "predictions": {
+        "1D": -1.31,
+        "5D": -0.62,
+        "10D": 1.04,
+        "20D": -0.98,
+        "1Q": 1.14,
+        "0.5Y": 1.65,
+        "1Y": -0.26
+      }
+    },
+    {
+      "ticker": "1326",
+      "full_ticker": "1326.TW",
+      "name": "股票 1326",
+      "industry": "上市企業",
+      "market_cap": "3176.76 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": -554.63,
+        "volatility": 2980.35
+      },
+      "pca": {
+        "pc1": -3.8828,
+        "pc2": 23.5782
+      },
+      "predictions": {
+        "1D": -0.68,
+        "5D": -0.09,
+        "10D": 0.5,
+        "20D": -0.11,
+        "1Q": 0.65,
+        "0.5Y": 0.64,
+        "1Y": -0.69
+      }
+    },
+    {
+      "ticker": "1402",
+      "full_ticker": "1402.TW",
+      "name": "股票 1402",
+      "industry": "上市企業",
+      "market_cap": "1544.30 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 522.84,
+        "volatility": 2198.84
+      },
+      "pca": {
+        "pc1": -9.4122,
+        "pc2": 22.5827
+      },
+      "predictions": {
+        "1D": 0.12,
+        "5D": -0.06,
+        "10D": 0.0,
+        "20D": -0.13,
+        "1Q": 0.13,
+        "0.5Y": -0.06,
+        "1Y": -0.06
+      }
+    },
+    {
+      "ticker": "1590",
+      "full_ticker": "1590.TW",
+      "name": "股票 1590",
+      "industry": "上市企業",
+      "market_cap": "2760.00 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2292.34,
+        "volatility": 4447.37
+      },
+      "pca": {
+        "pc1": 13.5431,
+        "pc2": -6.1791
+      },
+      "predictions": {
+        "1D": -0.04,
+        "5D": 0.18,
+        "10D": 0.2,
+        "20D": 0.17,
+        "1Q": 0.02,
+        "0.5Y": 0.16,
+        "1Y": 0.1
+      }
+    },
+    {
+      "ticker": "1605",
+      "full_ticker": "1605.TW",
+      "name": "股票 1605",
+      "industry": "上市企業",
+      "market_cap": "1728.22 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1607.29,
+        "volatility": 4176.42
+      },
+      "pca": {
+        "pc1": -10.5233,
+        "pc2": -5.751
+      },
+      "predictions": {
+        "1D": -0.28,
+        "5D": -0.33,
+        "10D": 0.76,
+        "20D": 0.15,
+        "1Q": 0.27,
+        "0.5Y": 0.5,
+        "1Y": 0.11
+      }
+    },
+    {
+      "ticker": "2002",
+      "full_ticker": "2002.TW",
+      "name": "股票 2002",
+      "industry": "上市企業",
+      "market_cap": "3005.36 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 8.44,
+        "volatility": 2487.97
+      },
+      "pca": {
+        "pc1": -17.7245,
+        "pc2": 18.205
+      },
+      "predictions": {
+        "1D": -0.22,
+        "5D": 0.07,
+        "10D": -0.03,
+        "20D": 0.17,
+        "1Q": 0.14,
+        "0.5Y": -0.03,
+        "1Y": 0.08
+      }
+    },
+    {
+      "ticker": "2059",
+      "full_ticker": "2059.TW",
+      "name": "股票 2059",
+      "industry": "上市企業",
+      "market_cap": "6542.14 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4462.49,
+        "volatility": 4218.04
+      },
+      "pca": {
+        "pc1": 23.1721,
+        "pc2": -27.0774
+      },
+      "predictions": {
+        "1D": 0.24,
+        "5D": 0.56,
+        "10D": -0.43,
+        "20D": -0.03,
+        "1Q": 0.07,
+        "0.5Y": 0.11,
+        "1Y": 0.01
+      }
+    },
+    {
+      "ticker": "2105",
+      "full_ticker": "2105.TW",
+      "name": "股票 2105",
+      "industry": "上市企業",
+      "market_cap": "961.08 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": -18.05,
+        "volatility": 2577.12
+      },
+      "pca": {
+        "pc1": -10.0348,
+        "pc2": 23.9774
+      },
+      "predictions": {
+        "1D": -0.03,
+        "5D": 0.14,
+        "10D": 0.3,
+        "20D": -0.13,
+        "1Q": -0.2,
+        "0.5Y": -0.34,
+        "1Y": 0.41
+      }
+    },
+    {
+      "ticker": "2207",
+      "full_ticker": "2207.TW",
+      "name": "股票 2207",
+      "industry": "上市企業",
+      "market_cap": "2685.24 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1211.62,
+        "volatility": 3134.81
+      },
+      "pca": {
+        "pc1": 1.0207,
+        "pc2": 20.8859
+      },
+      "predictions": {
+        "1D": -0.12,
+        "5D": 0.11,
+        "10D": -0.1,
+        "20D": 0.01,
+        "1Q": 0.08,
+        "0.5Y": 0.02,
+        "1Y": 0.01
+      }
+    },
+    {
+      "ticker": "2301",
+      "full_ticker": "2301.TW",
+      "name": "股票 2301",
+      "industry": "上市企業",
+      "market_cap": "4875.41 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2897.73,
+        "volatility": 3446.05
+      },
+      "pca": {
+        "pc1": 17.5473,
+        "pc2": -7.1651
+      },
+      "predictions": {
+        "1D": 0.34,
+        "5D": 0.02,
+        "10D": 0.06,
+        "20D": -0.03,
+        "1Q": 0.3,
+        "0.5Y": 0.37,
+        "1Y": -0.1
+      }
+    },
+    {
+      "ticker": "2303",
+      "full_ticker": "2303.TW",
+      "name": "股票 2303",
+      "industry": "上市企業",
+      "market_cap": "18299.51 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4084.05,
+        "volatility": 3697.32
+      },
+      "pca": {
+        "pc1": 9.6205,
+        "pc2": -2.9224
+      },
+      "predictions": {
+        "1D": 0.28,
+        "5D": 0.1,
+        "10D": 0.87,
+        "20D": -0.43,
+        "1Q": -0.12,
+        "0.5Y": -0.31,
+        "1Y": -0.38
+      }
+    },
+    {
+      "ticker": "2308",
+      "full_ticker": "2308.TW",
+      "name": "台達電",
+      "industry": "電子零組件",
+      "market_cap": "55847.17 億",
+      "logo": "https://logo.clearbit.com/deltaww.com",
+      "return_risk": {
+        "expected_return": 4152.46,
+        "volatility": 3508.45
+      },
+      "pca": {
+        "pc1": 24.0051,
+        "pc2": -14.0357
+      },
+      "predictions": {
+        "1D": 0.31,
+        "5D": 0.16,
+        "10D": 0.19,
+        "20D": 0.23,
+        "1Q": 0.3,
+        "0.5Y": 0.22,
+        "1Y": 0.41
+      }
+    },
+    {
+      "ticker": "2317",
+      "full_ticker": "2317.TW",
+      "name": "鴻海",
+      "industry": "其他電子",
+      "market_cap": "37666.92 億",
+      "logo": "https://logo.clearbit.com/foxconn.com",
+      "return_risk": {
+        "expected_return": 2265.31,
+        "volatility": 3046.4
+      },
+      "pca": {
+        "pc1": 9.9856,
+        "pc2": -5.0061
+      },
+      "predictions": {
+        "1D": 0.03,
+        "5D": 0.3,
+        "10D": 0.27,
+        "20D": 0.03,
+        "1Q": 0.09,
+        "0.5Y": 0.15,
+        "1Y": 0.04
+      }
+    },
+    {
+      "ticker": "2327",
+      "full_ticker": "2327.TW",
+      "name": "股票 2327",
+      "industry": "上市企業",
+      "market_cap": "22234.29 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4090.89,
+        "volatility": 4277.8
+      },
+      "pca": {
+        "pc1": 15.3348,
+        "pc2": -19.395
+      },
+      "predictions": {
+        "1D": 0.53,
+        "5D": 0.62,
+        "10D": 0.42,
+        "20D": 0.04,
+        "1Q": -0.17,
+        "0.5Y": 0.35,
+        "1Y": 0.32
+      }
+    },
+    {
+      "ticker": "2330",
+      "full_ticker": "2330.TW",
+      "name": "台積電",
+      "industry": "半導體",
+      "market_cap": "624970.12 億",
+      "logo": "https://logo.clearbit.com/tsmc.com",
+      "return_risk": {
+        "expected_return": 3540.99,
+        "volatility": 2893.93
+      },
+      "pca": {
+        "pc1": 17.2491,
+        "pc2": -2.1
+      },
+      "predictions": {
+        "1D": 0.17,
+        "5D": 0.34,
+        "10D": 0.18,
+        "20D": -0.01,
+        "1Q": 0.27,
+        "0.5Y": 0.37,
+        "1Y": 0.0
+      }
+    },
+    {
+      "ticker": "2344",
+      "full_ticker": "2344.TW",
+      "name": "股票 2344",
+      "industry": "上市企業",
+      "market_cap": "9832.50 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4109.87,
+        "volatility": 4838.42
+      },
+      "pca": {
+        "pc1": 18.2207,
+        "pc2": -29.8455
+      },
+      "predictions": {
+        "1D": -0.33,
+        "5D": 0.58,
+        "10D": 1.36,
+        "20D": -0.29,
+        "1Q": 0.55,
+        "0.5Y": 1.03,
+        "1Y": -0.99
+      }
+    },
+    {
+      "ticker": "2345",
+      "full_ticker": "2345.TW",
+      "name": "股票 2345",
+      "industry": "上市企業",
+      "market_cap": "13663.22 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4675.93,
+        "volatility": 4677.85
+      },
+      "pca": {
+        "pc1": 35.5841,
+        "pc2": -35.8777
+      },
+      "predictions": {
+        "1D": 0.2,
+        "5D": 0.26,
+        "10D": 0.37,
+        "20D": 0.09,
+        "1Q": 0.11,
+        "0.5Y": 0.29,
+        "1Y": 0.19
+      }
+    },
+    {
+      "ticker": "2354",
+      "full_ticker": "2354.TW",
+      "name": "股票 2354",
+      "industry": "上市企業",
+      "market_cap": "818.99 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 259.26,
+        "volatility": 3106.66
+      },
+      "pca": {
+        "pc1": 7.598,
+        "pc2": -2.2481
+      },
+      "predictions": {
+        "1D": 0.08,
+        "5D": -0.02,
+        "10D": 0.02,
+        "20D": 0.01,
+        "1Q": -0.04,
+        "0.5Y": 0.07,
+        "1Y": 0.04
+      }
+    },
+    {
+      "ticker": "2357",
+      "full_ticker": "2357.TW",
+      "name": "股票 2357",
+      "industry": "上市企業",
+      "market_cap": "5860.38 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2570.06,
+        "volatility": 3095.27
+      },
+      "pca": {
+        "pc1": 7.6755,
+        "pc2": 0.461
+      },
+      "predictions": {
+        "1D": 0.11,
+        "5D": 0.13,
+        "10D": 0.1,
+        "20D": 0.1,
+        "1Q": 0.14,
+        "0.5Y": 0.05,
+        "1Y": 0.25
+      }
+    },
+    {
+      "ticker": "2360",
+      "full_ticker": "2360.TW",
+      "name": "股票 2360",
+      "industry": "上市企業",
+      "market_cap": "9823.18 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4417.41,
+        "volatility": 4555.82
+      },
+      "pca": {
+        "pc1": 28.9938,
+        "pc2": -32.3784
+      },
+      "predictions": {
+        "1D": 0.23,
+        "5D": 0.39,
+        "10D": 0.23,
+        "20D": 0.26,
+        "1Q": 0.08,
+        "0.5Y": -0.12,
+        "1Y": 0.37
+      }
+    },
+    {
+      "ticker": "2368",
+      "full_ticker": "2368.TW",
+      "name": "股票 2368",
+      "industry": "上市企業",
+      "market_cap": "7060.69 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 6497.04,
+        "volatility": 5229.85
+      },
+      "pca": {
+        "pc1": 46.8144,
+        "pc2": -59.8938
+      },
+      "predictions": {
+        "1D": 0.27,
+        "5D": 0.24,
+        "10D": 0.39,
+        "20D": 0.11,
+        "1Q": 0.36,
+        "0.5Y": 0.38,
+        "1Y": 0.37
+      }
+    },
+    {
+      "ticker": "2379",
+      "full_ticker": "2379.TW",
+      "name": "股票 2379",
+      "industry": "上市企業",
+      "market_cap": "4222.05 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2868.65,
+        "volatility": 3686.89
+      },
+      "pca": {
+        "pc1": 13.4037,
+        "pc2": -6.2516
+      },
+      "predictions": {
+        "1D": -0.3,
+        "5D": 0.05,
+        "10D": 0.21,
+        "20D": -0.04,
+        "1Q": 0.47,
+        "0.5Y": 0.31,
+        "1Y": 0.23
+      }
+    },
+    {
+      "ticker": "2382",
+      "full_ticker": "2382.TW",
+      "name": "股票 2382",
+      "industry": "上市企業",
+      "market_cap": "14523.48 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 3294.65,
+        "volatility": 3449.89
+      },
+      "pca": {
+        "pc1": 18.1487,
+        "pc2": -14.9587
+      },
+      "predictions": {
+        "1D": 0.33,
+        "5D": 0.24,
+        "10D": 0.12,
+        "20D": -0.09,
+        "1Q": -0.0,
+        "0.5Y": 0.18,
+        "1Y": 0.12
+      }
+    },
+    {
+      "ticker": "2383",
+      "full_ticker": "2383.TW",
+      "name": "股票 2383",
+      "industry": "上市企業",
+      "market_cap": "20065.98 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 6476.35,
+        "volatility": 4777.29
+      },
+      "pca": {
+        "pc1": 41.55,
+        "pc2": -52.2079
+      },
+      "predictions": {
+        "1D": 0.16,
+        "5D": 0.29,
+        "10D": 0.53,
+        "20D": 0.07,
+        "1Q": 0.16,
+        "0.5Y": 0.42,
+        "1Y": 0.02
+      }
+    },
+    {
+      "ticker": "2395",
+      "full_ticker": "2395.TW",
+      "name": "股票 2395",
+      "industry": "上市企業",
+      "market_cap": "4289.17 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1684.74,
+        "volatility": 2953.02
+      },
+      "pca": {
+        "pc1": 11.2634,
+        "pc2": 6.4632
+      },
+      "predictions": {
+        "1D": 0.01,
+        "5D": 0.07,
+        "10D": 0.19,
+        "20D": -0.1,
+        "1Q": 0.09,
+        "0.5Y": 0.02,
+        "1Y": 0.03
+      }
+    },
+    {
+      "ticker": "2408",
+      "full_ticker": "2408.TW",
+      "name": "股票 2408",
+      "industry": "上市企業",
+      "market_cap": "15853.70 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 3313.93,
+        "volatility": 4819.79
+      },
+      "pca": {
+        "pc1": 22.5428,
+        "pc2": -24.832
+      },
+      "predictions": {
+        "1D": 0.4,
+        "5D": 0.0,
+        "10D": 0.97,
+        "20D": -0.2,
+        "1Q": 1.25,
+        "0.5Y": 0.89,
+        "1Y": -0.1
+      }
+    },
+    {
+      "ticker": "2409",
+      "full_ticker": "2409.TW",
+      "name": "股票 2409",
+      "industry": "上市企業",
+      "market_cap": "2124.51 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1396.71,
+        "volatility": 4310.18
+      },
+      "pca": {
+        "pc1": -5.2441,
+        "pc2": -3.6167
+      },
+      "predictions": {
+        "1D": -0.27,
+        "5D": -0.07,
+        "10D": -0.41,
+        "20D": 0.41,
+        "1Q": 0.11,
+        "0.5Y": -0.13,
+        "1Y": -0.27
+      }
+    },
+    {
+      "ticker": "2412",
+      "full_ticker": "2412.TW",
+      "name": "股票 2412",
+      "industry": "上市企業",
+      "market_cap": "11170.72 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 711.93,
+        "volatility": 1083.92
+      },
+      "pca": {
+        "pc1": -4.7344,
+        "pc2": 29.391
+      },
+      "predictions": {
+        "1D": 0.04,
+        "5D": 0.05,
+        "10D": -0.01,
+        "20D": 0.03,
+        "1Q": 0.07,
+        "0.5Y": 0.05,
+        "1Y": 0.05
+      }
+    },
+    {
+      "ticker": "2449",
+      "full_ticker": "2449.TW",
+      "name": "股票 2449",
+      "industry": "上市企業",
+      "market_cap": "3772.17 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4066.25,
+        "volatility": 4060.51
+      },
+      "pca": {
+        "pc1": 26.0997,
+        "pc2": -25.4397
+      },
+      "predictions": {
+        "1D": 0.09,
+        "5D": 0.06,
+        "10D": 0.25,
+        "20D": 0.05,
+        "1Q": 0.16,
+        "0.5Y": 0.17,
+        "1Y": 0.17
+      }
+    },
+    {
+      "ticker": "2454",
+      "full_ticker": "2454.TW",
+      "name": "聯發科",
+      "industry": "半導體",
+      "market_cap": "70410.99 億",
+      "logo": "https://logo.clearbit.com/mediatek.com",
+      "return_risk": {
+        "expected_return": 4663.58,
+        "volatility": 4044.38
+      },
+      "pca": {
+        "pc1": 20.1289,
+        "pc2": -14.361
+      },
+      "predictions": {
+        "1D": 0.2,
+        "5D": 0.4,
+        "10D": 0.6,
+        "20D": -0.05,
+        "1Q": 0.22,
+        "0.5Y": 0.36,
+        "1Y": 0.31
+      }
+    },
+    {
+      "ticker": "2474",
+      "full_ticker": "2474.TW",
+      "name": "股票 2474",
+      "industry": "上市企業",
+      "market_cap": "1091.11 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 448.12,
+        "volatility": 2913.34
+      },
+      "pca": {
+        "pc1": 1.7271,
+        "pc2": 12.362
+      },
+      "predictions": {
+        "1D": 0.07,
+        "5D": 0.01,
+        "10D": 0.04,
+        "20D": 0.02,
+        "1Q": -0.02,
+        "0.5Y": 0.06,
+        "1Y": -0.03
+      }
+    },
+    {
+      "ticker": "2603",
+      "full_ticker": "2603.TW",
+      "name": "股票 2603",
+      "industry": "上市企業",
+      "market_cap": "4178.53 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 4169.42,
+        "volatility": 4777.45
+      },
+      "pca": {
+        "pc1": -87.8682,
+        "pc2": -50.3724
+      },
+      "predictions": {
+        "1D": 0.17,
+        "5D": 0.04,
+        "10D": 0.32,
+        "20D": -0.07,
+        "1Q": 0.02,
+        "0.5Y": -0.02,
+        "1Y": 0.24
+      }
+    },
+    {
+      "ticker": "2609",
+      "full_ticker": "2609.TW",
+      "name": "股票 2609",
+      "industry": "上市企業",
+      "market_cap": "1791.45 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 3377.56,
+        "volatility": 4966.38
+      },
+      "pca": {
+        "pc1": -94.9632,
+        "pc2": -51.8638
+      },
+      "predictions": {
+        "1D": 0.12,
+        "5D": 0.31,
+        "10D": 0.25,
+        "20D": 0.07,
+        "1Q": -0.03,
+        "0.5Y": 0.16,
+        "1Y": -0.01
+      }
+    },
+    {
+      "ticker": "2615",
+      "full_ticker": "2615.TW",
+      "name": "股票 2615",
+      "industry": "上市企業",
+      "market_cap": "2256.14 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2987.6,
+        "volatility": 5111.06
+      },
+      "pca": {
+        "pc1": -94.1849,
+        "pc2": -50.9815
+      },
+      "predictions": {
+        "1D": 0.05,
+        "5D": 0.08,
+        "10D": 0.15,
+        "20D": -0.0,
+        "1Q": 0.03,
+        "0.5Y": 0.06,
+        "1Y": 0.07
+      }
+    },
+    {
+      "ticker": "2633",
+      "full_ticker": "2633.TW",
+      "name": "股票 2633",
+      "industry": "上市企業",
+      "market_cap": "1471.80 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 80.5,
+        "volatility": 1684.62
+      },
+      "pca": {
+        "pc1": -8.4657,
+        "pc2": 21.8222
+      },
+      "predictions": {
+        "1D": 0.0,
+        "5D": 0.02,
+        "10D": -0.03,
+        "20D": -0.03,
+        "1Q": -0.06,
+        "0.5Y": 0.05,
+        "1Y": -0.03
+      }
+    },
+    {
+      "ticker": "2801",
+      "full_ticker": "2801.TW",
+      "name": "股票 2801",
+      "industry": "上市企業",
+      "market_cap": "2688.54 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 910.06,
+        "volatility": 1521.25
+      },
+      "pca": {
+        "pc1": -4.7331,
+        "pc2": 24.582
+      },
+      "predictions": {
+        "1D": 0.05,
+        "5D": -0.0,
+        "10D": 0.04,
+        "20D": 0.03,
+        "1Q": 0.11,
+        "0.5Y": 0.03,
+        "1Y": 0.01
+      }
+    },
+    {
+      "ticker": "2823",
+      "full_ticker": "2823.TW",
+      "name": "股票 2823",
+      "industry": "上市企業",
+      "market_cap": "N/A",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 339.69,
+        "volatility": 1637.64
+      },
+      "pca": {
+        "pc1": -7.3222,
+        "pc2": 24.1503
+      },
+      "predictions": {
+        "1D": 0.01,
+        "5D": 0.02,
+        "10D": 0.02,
+        "20D": 0.01,
+        "1Q": 0.02,
+        "0.5Y": 0.02,
+        "1Y": 0.02
+      }
+    },
+    {
+      "ticker": "2880",
+      "full_ticker": "2880.TW",
+      "name": "股票 2880",
+      "industry": "上市企業",
+      "market_cap": "5337.16 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1652.84,
+        "volatility": 1851.75
+      },
+      "pca": {
+        "pc1": -4.7677,
+        "pc2": 26.4999
+      },
+      "predictions": {
+        "1D": 0.13,
+        "5D": -0.06,
+        "10D": 0.03,
+        "20D": -0.08,
+        "1Q": 0.19,
+        "0.5Y": 0.01,
+        "1Y": -0.16
+      }
+    },
+    {
+      "ticker": "2881",
+      "full_ticker": "2881.TW",
+      "name": "富邦金",
+      "industry": "金融保險",
+      "market_cap": "19330.16 億",
+      "logo": "https://logo.clearbit.com/fubon.com",
+      "return_risk": {
+        "expected_return": 2285.15,
+        "volatility": 2298.4
+      },
+      "pca": {
+        "pc1": -5.1234,
+        "pc2": 18.7337
+      },
+      "predictions": {
+        "1D": -0.09,
+        "5D": 0.03,
+        "10D": 0.09,
+        "20D": 0.04,
+        "1Q": 0.02,
+        "0.5Y": -0.01,
+        "1Y": -0.0
+      }
+    },
+    {
+      "ticker": "2882",
+      "full_ticker": "2882.TW",
+      "name": "國泰金",
+      "industry": "金融保險",
+      "market_cap": "16942.94 億",
+      "logo": "https://logo.clearbit.com/cathayholdings.com",
+      "return_risk": {
+        "expected_return": 1710.06,
+        "volatility": 2356.62
+      },
+      "pca": {
+        "pc1": -6.3628,
+        "pc2": 17.8688
+      },
+      "predictions": {
+        "1D": 0.12,
+        "5D": 0.27,
+        "10D": 0.27,
+        "20D": 0.11,
+        "1Q": 0.06,
+        "0.5Y": 0.28,
+        "1Y": 0.22
+      }
+    },
+    {
+      "ticker": "2883",
+      "full_ticker": "2883.TW",
+      "name": "股票 2883",
+      "industry": "上市企業",
+      "market_cap": "5219.77 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2032.08,
+        "volatility": 2453.96
+      },
+      "pca": {
+        "pc1": -6.4672,
+        "pc2": 17.3251
+      },
+      "predictions": {
+        "1D": 0.34,
+        "5D": 0.17,
+        "10D": 0.02,
+        "20D": -0.13,
+        "1Q": 0.17,
+        "0.5Y": -0.04,
+        "1Y": 0.14
+      }
+    },
+    {
+      "ticker": "2884",
+      "full_ticker": "2884.TW",
+      "name": "股票 2884",
+      "industry": "上市企業",
+      "market_cap": "5731.97 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1520.22,
+        "volatility": 1858.67
+      },
+      "pca": {
+        "pc1": -4.0034,
+        "pc2": 26.491
+      },
+      "predictions": {
+        "1D": 0.17,
+        "5D": -0.01,
+        "10D": 0.03,
+        "20D": 0.1,
+        "1Q": 0.07,
+        "0.5Y": 0.16,
+        "1Y": -0.01
+      }
+    },
+    {
+      "ticker": "2885",
+      "full_ticker": "2885.TW",
+      "name": "股票 2885",
+      "industry": "上市企業",
+      "market_cap": "9065.18 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 2687.08,
+        "volatility": 2260.56
+      },
+      "pca": {
+        "pc1": -3.5678,
+        "pc2": 17.9228
+      },
+      "predictions": {
+        "1D": 0.2,
+        "5D": 0.07,
+        "10D": 0.29,
+        "20D": 0.13,
+        "1Q": 0.32,
+        "0.5Y": 0.38,
+        "1Y": -0.12
+      }
+    },
+    {
+      "ticker": "2886",
+      "full_ticker": "2886.TW",
+      "name": "股票 2886",
+      "industry": "上市企業",
+      "market_cap": "6749.19 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1300.18,
+        "volatility": 1652.68
+      },
+      "pca": {
+        "pc1": -5.2181,
+        "pc2": 29.1238
+      },
+      "predictions": {
+        "1D": 0.18,
+        "5D": 0.03,
+        "10D": 0.1,
+        "20D": 0.02,
+        "1Q": 0.05,
+        "0.5Y": 0.05,
+        "1Y": 0.03
+      }
+    },
+    {
+      "ticker": "2887",
+      "full_ticker": "2887.TW",
+      "name": "股票 2887",
+      "industry": "上市企業",
+      "market_cap": "8069.15 億",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 1925.55,
+        "volatility": 2092.81
+      },
+      "pca": {
+        "pc1": -4.2857,
+        "pc2": 23.4615
+      },
+      "predictions": {
+        "1D": 0.1,
+        "5D": 0.01,
+        "10D": 0.1,
+        "20D": 0.21,
+        "1Q": 0.16,
+        "0.5Y": 0.29,
+        "1Y": 0.04
+      }
+    },
+    {
+      "ticker": "2888",
+      "full_ticker": "2888.TW",
+      "name": "股票 2888",
+      "industry": "上市企業",
+      "market_cap": "N/A",
+      "logo": "https://logo.clearbit.com/google.com",
+      "return_risk": {
+        "expected_return": 639.58,
+        "volatility": 2295.19
+      },
+      "pca": {
+        "pc1": -7.7778,
+        "pc2": 19.8485
+      },
+      "predictions": {
+        "1D": 0.03,
+        "5D": 0.03,
+        "10D": 0.03,
+        "20D": 0.03,
+        "1Q": 0.03,
+        "0.5Y": 0.02,
+        "1Y": 0.02
+      }
+    }
+  ]
+}
