@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIMA Quantitative Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plotly.js CDN (用於高質感互動圖表) -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+
+    <!-- 1. Header (放置 FIMA Logo 與專案資訊) -->
+    <header class="bg-slate-800 border-b border-slate-700 p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <!-- FIMA Logo (請替換為教授提供的真實 FIMA Logo 路徑) -->
+                <div class="bg-blue-600 text-white font-bold text-xl px-3 py-1 rounded shadow">
+                    FIMA
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide">Quantitative Asset Dashboard</h1>
+                    <p class="text-xs text-slate-400" id="study-period">Study Period: Loading...</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 border border-slate-600">
+                    <i class="fa-solid fa-database mr-1"></i> Source: <span id="data-source">CSV</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主內容區塊 -->
+    <main class="max-w-7xl mx-auto p-4 md:p-6 space-y-6">
+
+        <!-- 2. 圖表切換區 (Markowitz Return-Risk vs PCA) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Markowitz Return-Risk Scatter Plot -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-lg font-semibold text-blue-400">
+                        <i class="fa-solid fa-chart-line mr-2"></i>Markowitz Return-Risk Plan
+                    </h2>
+                    <span class="text-xs text-slate-400">Risk (Volatility) vs Return</span>
+                </div>
+                <div id="markowitz-chart" class="w-full h-80"></div>
+            </div>
+
+            <!-- PCA Scatter Plot -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-lg font-semibold text-purple-400">
+                        <i class="fa-solid fa-diagram-project mr-2"></i>PCA Feature Analysis (PC1 vs PC2)
+                    </h2>
+                    <span class="text-xs text-slate-400">Dimensionality Reduction</span>
+                </div>
+                <div id="pca-chart" class="w-full h-80"></div>
+            </div>
+        </div>
+
+        <!-- 3. 公司預測與詳細列表表格 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 shadow-lg">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-5">
+                <div>
+                    <h2 class="text-xl font-bold text-slate-100">Company Returns Prediction & Overview</h2>
+                    <p class="text-xs text-slate-400">Select horizon to view Ridge Regression return predictions</p>
+                </div>
+
+                <!-- 天數 Horizon 切換按鈕 -->
+                <div class="flex flex-wrap gap-1.5 bg-slate-900 p-1 rounded-lg border border-slate-700" id="horizon-btns">
+                    <button onclick="changeHorizon('1D')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition bg-blue-600 text-white" data-h="1D">1D</button>
+                    <button onclick="changeHorizon('5D')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="5D">5D</button>
+                    <button onclick="changeHorizon('10D')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="10D">10D</button>
+                    <button onclick="changeHorizon('20D')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="20D">20D</button>
+                    <button onclick="changeHorizon('1Q')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="1Q">1Q</button>
+                    <button onclick="changeHorizon('0.5Y')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="0.5Y">0.5Y</button>
+                    <button onclick="changeHorizon('1Y')" class="horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white" data-h="1Y">1Y</button>
+                </div>
+            </div>
+
+            <!-- 表格區域 -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-700 text-slate-400 text-xs uppercase tracking-wider bg-slate-900/50">
+                            <th class="p-3">Company</th>
+                            <th class="p-3">Ticker</th>
+                            <th class="p-3">Industry</th>
+                            <th class="p-3">Market Cap</th>
+                            <th class="p-3 text-right">Predicted Return (<span id="current-horizon-label">1D</span>)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="company-table-body" class="divide-y divide-slate-700/50 text-sm">
+                        <!-- 由 JS 自動渲染 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript 邏輯 -->
+    <script>
+        let globalData = null;
+        let currentHorizon = '1D';
+
+        // 頁面載入後讀取 data.json
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('data.json')
+                .then(res => res.json())
+                .then(data => {
+                    globalData = data;
+                    initDashboard();
+                })
+                .catch(err => console.error("Error loading data.json:", err));
+        });
+
+        function initDashboard() {
+            // 填寫基本資訊
+            document.getElementById('study-period').innerText = `Study Period: ${globalData.study_period}`;
+            document.getElementById('data-source').innerText = globalData.data_source || 'CSV';
+
+            // 渲染 Markowitz & PCA 圖表
+            renderMarkowitzChart();
+            renderPCAChart();
+
+            // 渲染表格
+            renderTable();
+        }
+
+        // 1. 繪製 Markowitz Return-Risk 圖表
+        function renderMarkowitzChart() {
+            const companies = globalData.companies;
+            const trace = {
+                x: companies.map(c => c.return_risk.volatility),
+                y: companies.map(c => c.return_risk.expected_return),
+                text: companies.map(c => `${c.name} (${c.ticker})`),
+                mode: 'markers+text',
+                textposition: 'top center',
+                textfont: { size: 9, color: '#94a3b8' },
+                marker: { size: 10, color: '#3b82f6', opacity: 0.8 }
+            };
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: { l: 40, r: 20, t: 20, b: 40 },
+                xaxis: { title: 'Volatility (Risk)', color: '#94a3b8', gridcolor: '#334155' },
+                yaxis: { title: 'Expected Return', color: '#94a3b8', gridcolor: '#334155' },
+                hovermode: 'closest'
+            };
+
+            Plotly.newPlot('markowitz-chart', [trace], layout, {responsive: true, displayModeBar: false});
+        }
+
+        // 2. 繪製 PCA 圖表
+        function renderPCAChart() {
+            const companies = globalData.companies;
+            const trace = {
+                x: companies.map(c => c.pca.pc1),
+                y: companies.map(c => c.pca.pc2),
+                text: companies.map(c => `${c.name} (${c.ticker})`),
+                mode: 'markers+text',
+                textposition: 'top center',
+                textfont: { size: 9, color: '#94a3b8' },
+                marker: { size: 10, color: '#a855f7', opacity: 0.8 }
+            };
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: { l: 40, r: 20, t: 20, b: 40 },
+                xaxis: { title: 'PC1', color: '#94a3b8', gridcolor: '#334155' },
+                yaxis: { title: 'PC2', color: '#94a3b8', gridcolor: '#334155' },
+                hovermode: 'closest'
+            };
+
+            Plotly.newPlot('pca-chart', [trace], layout, {responsive: true, displayModeBar: false});
+        }
+
+        // 3. 切換預測天數 Horizon
+        function changeHorizon(horizon) {
+            currentHorizon = horizon;
+            document.getElementById('current-horizon-label').innerText = horizon;
+
+            // 更新按鈕樣式
+            document.querySelectorAll('.horizon-btn').forEach(btn => {
+                if (btn.dataset.h === horizon) {
+                    btn.className = "horizon-btn px-3 py-1 rounded text-xs font-medium transition bg-blue-600 text-white";
+                } else {
+                    btn.className = "horizon-btn px-3 py-1 rounded text-xs font-medium transition text-slate-400 hover:text-white";
+                }
+            });
+
+            renderTable();
+        }
+
+        // 4. 渲染表格
+        function renderTable() {
+            const tbody = document.getElementById('company-table-body');
+            tbody.innerHTML = '';
+
+            globalData.companies.forEach(comp => {
+                const predVal = comp.predictions[currentHorizon] || 0;
+                const isPositive = predVal >= 0;
+                const badgeColor = isPositive ? 'text-emerald-400 bg-emerald-950/50 border-emerald-800' : 'text-rose-400 bg-rose-950/50 border-rose-800';
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-700/30 transition";
+                tr.innerHTML = `
+                    <td class="p-3 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center font-bold text-xs text-blue-400 border border-slate-600">
+                            ${comp.ticker.substring(0, 2)}
+                        </div>
+                        <span class="font-medium text-slate-200">${comp.name}</span>
+                    </td>
+                    <td class="p-3 text-slate-400 font-mono">${comp.full_ticker}</td>
+                    <td class="p-3 text-slate-400">${comp.industry}</td>
+                    <td class="p-3 text-slate-300 font-mono">${comp.market_cap}</td>
+                    <td class="p-3 text-right">
+                        <span class="px-2.5 py-1 rounded-md border font-mono text-xs font-semibold ${badgeColor}">
+                            ${isPositive ? '+' : ''}${predVal}%
+                        </span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>
